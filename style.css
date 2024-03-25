@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Questrial', Lovelo;
+  font-size: 20px;
+  
+}
+
+nav {
+  background-color: #171717;
+  box-shadow: 3px 3px 5px #0ebc72;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #0ebc72;
+}
+
+nav a:hover {
+  background-color: #024746;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #024746;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px #0ebc72;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+
+.Início,
+.Sobre,
+.Organizadores,
+.Cotasecontrapartidas,
+.Caneca {
+  background-size: cover;
+  background-position: center;
+  height: 60vh; 
+}
+
+@media screen and (max-width: 100%) {
+  .Início,
+  .Sobre,
+  .Organizadores,
+  .Cotasecontrapartidas,
+  .Caneca {
+    height: 50vh; 
+  }
+}
+
+
+/*  Rodapé */
+footer {
+  background-color: #171717;
+  color: #0ebc72;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .rodape-conteudo a {
+  color: #0ebc72;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+footer .rodape-conteudo p {
+  margin: 5px 0;
+}
